@@ -35,5 +35,3 @@ build/
 ### MVN Code ###
 .mvn/
 /src/test/
-mvnw
-mvnW.cmd
