@@ -1,4 +1,4 @@
-package it.betacom.UtilsApi;
+package it.UtilsApi;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,4 +1,4 @@
-package it.betacom.UtilsApi.genericUtils;
+package it.UtilsApi.genericUtils;
 
 public interface GenericUtilsService {
     public String convertToJson(Object object);

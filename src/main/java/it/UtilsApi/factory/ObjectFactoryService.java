@@ -1,14 +1,12 @@
-package it.betacom.UtilsApi.factory;
+package it.UtilsApi.factory;
 
-import it.betacom.UtilsApi.model.Dispositivo;
 import org.springframework.stereotype.Service;
 
 import java.lang.reflect.Field;
-import java.lang.reflect.InvocationTargetException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Map;
-import java.util.UUID;
+
 
 @Service
 public class ObjectFactoryService {
@@ -28,7 +26,6 @@ public class ObjectFactoryService {
                     try {
                         Field field = clazz.getDeclaredField(key);
                         field.setAccessible(true);
-
                         if (field.getType().equals(Date.class)) {
                             SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
                             Date dateValue = dateFormat.parse((String) value);
